@@ -1,4 +1,44 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap";
 * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  background: #f5f8ff;
+}
+
+.container {
+  margin: 0 40px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container h1 {
+  color: #333;
+}
+.container .tab {
+  position: relative;
+  background: #fff;
+  padding: 0 20px 20px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.container .tab input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.container .tab input:checked ~ label::after {
+  content: "+";
+  color: #FFF;
+  transform: rotate(135deg);
 }/*# sourceMappingURL=style.css.map */
