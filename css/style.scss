@@ -36,7 +36,7 @@ body {
                     label {
                         &::after {
                             content: '+';
-                            color: #FFF;
+                            color: #0008ff;
                             transform: rotate(135deg);
                         }
                         h2 {
@@ -58,7 +58,13 @@ body {
                             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
                         }
                     }
-                    
+                    .content{
+                        max-height: 100vh;
+                        transition: 1s;
+                        p {
+                            color: #fff;
+                        }
+                    }
                 }
             }
         }

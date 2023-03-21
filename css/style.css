@@ -39,7 +39,7 @@ body {
 }
 .container .tab input:checked ~ label::after {
   content: "+";
-  color: #FFF;
+  color: #0008ff;
   transform: rotate(135deg);
 }
 .container .tab input:checked ~ label h2 {
@@ -59,4 +59,11 @@ body {
   color: #333;
   border-radius: 2px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.container .tab input:checked ~ .content {
+  max-height: 100vh;
+  transition: 1s;
+}
+.container .tab input:checked ~ .content p {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
