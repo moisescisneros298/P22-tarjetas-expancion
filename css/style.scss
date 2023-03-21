@@ -68,5 +68,37 @@ body {
                 }
             }
         }
+        label {
+            display: inline-block;
+            display: flex;
+            margin-bottom: 0px;
+            align-items: center;
+            cursor: pointer;
+            &::after {
+                content: '+';
+                position: absolute;
+                right: 20px;
+                font-size: 2em;
+                color: rgba(0,0,0,0.1);
+                transition: transform 1s;
+            }
+            h2 {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                font-size: 1.5em;
+                border-radius: 5px;
+                margin-right: 10px;
+            }
+            h3 {
+                position: relative;
+                font-weight: 500;
+                color: #333;
+                z-index: 10;
+            }
+        }
     }
 }
